@@ -4,9 +4,13 @@
     "version": "2.0.0",
     "tasks": [
       {
-        "label": "clear",
-        "type": "shell",
-        "command":"rm ./Learn.exe"
+        
+          "label": "compile",
+          "type": "shell",
+          "command": "rm sms.exe ; gcc -o sms sms.c ; ./sms.exe"
+        
+  
       }
+
     ]
 }
