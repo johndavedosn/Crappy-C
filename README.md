@@ -12,4 +12,7 @@ so please **Don't laugh at me**.
 
 sms.c is a Student Management System I'm working on as a side projects to learn from it's only, 
 some structs and functions thrown togather in the future I'm gonna be adding a CLI control to use it.
+# Configs for vscode
 
+
+This is just a folder holding my vscode config files in case I lost them.
