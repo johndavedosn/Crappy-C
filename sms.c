@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
@@ -20,13 +19,15 @@ struct Student {
     char name[24];
     float latest_grade;
 };
-struct Class* AddClass(int id, int num){
+struct Class* AddClass(int id, int num, float average_grade){
     struct Class* class = (struct Class*)malloc(sizeof(struct Class));
     if (class == null){
         return null;
     }
     class->classid = id;
     class->stdnum = num; 
+    class->average_grade = average_grade;
+
     return class;
 };
 struct Teacher* AddTeacher(char name[24], char subject[24], struct Class* cls){
@@ -39,7 +40,7 @@ struct Teacher* AddTeacher(char name[24], char subject[24], struct Class* cls){
     tchr->class = cls;
     return tchr;
 };
-struct Student* AddStudent(int sid, struct Class* cls, struct Teacher* tchr, char name[24]){
+struct Student* AddStudent(int sid, struct Class* cls, struct Teacher* tchr, char name[24], float latest_grade){
     struct Student* stdnt = (struct Student*)malloc(sizeof(struct Student));
     if (stdnt == null){
         return null;
@@ -47,6 +48,7 @@ struct Student* AddStudent(int sid, struct Class* cls, struct Teacher* tchr, cha
     stdnt->sid = sid;
     stdnt->class = cls;
     stdnt->teacher= tchr;
+    stdnt->latest_grade = latest_grade;
     strcpy(stdnt->name, name);
     return stdnt;
 
@@ -77,5 +79,6 @@ int DeleteStudent(struct Student* stdnt){
 
 int main() {
     
+
     return 0;
 }
