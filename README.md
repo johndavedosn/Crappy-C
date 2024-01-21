@@ -16,3 +16,9 @@ some structs and functions thrown togather in the future I'm gonna be adding a C
 
 
 This is just a folder holding my vscode config files in case I lost them.
+
+# ssl.c
+
+ssl.c is a simple implementation of a single-linked-list, 
+it provides a simple CLI for interacting with the linked 
+list.
