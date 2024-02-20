@@ -22,3 +22,7 @@ This is just a folder holding my vscode config files in case I lost them.
 ssl.c is a simple implementation of a single-linked-list, 
 it provides a simple CLI for interacting with the linked 
 list.
+
+# Sorting_algoes.c
+
+This is a file containting almost all known sorting algorithms implemented in C.
