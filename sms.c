@@ -22,7 +22,7 @@ struct Student {
 struct Class* AddClass(int id, int num, float average_grade){
     struct Class* class = (struct Class*)malloc(sizeof(struct Class));
     if (class == null){
-        return nu               ll;
+        return null;
     }
     class->classid = id;
     class->stdnum = num; 
