@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+set(CMAKE_CXX_COMPILER "C://TDM-GCC-32//bin//g++.exe")
+set(CMAKE_C_COMPILER "C://TDM-GCC-32//bin//gcc.exe")
+project(C_C++)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+add_executable(string str_impl.c)
